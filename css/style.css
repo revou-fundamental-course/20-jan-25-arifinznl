@@ -98,63 +98,41 @@ button {
 }  
   
 /* Profile Section */  
-#profile-section {  
+#information {  
     padding: 10px 20px;
     background-color: #f9f9f9; /* Warna latar belakang yang lembut */ 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk kedalaman */   
 }  
   
-.profile-container {  
-    display: flex; /* Menggunakan flexbox untuk profil */  
-    flex-direction: row; /* Mengatur arah profil */  
-    align-items: center; /* Menyelaraskan profil secara vertikal */  
-    justify-content: center; /* Menyelaraskan profil secara horizontal */  
-    height: 330px; /* Tinggi kontainer profil */  
-    margin-bottom: 40px; /* Margin bawah */  
-    flex-wrap: wrap; /* Membungkus elemen jika perlu */  
-    gap: 25px; /* Jarak antar elemen */  
-}  
+
   
-.profile-bio {  
-    display: flex; /* Menggunakan flexbox untuk bio */  
-    flex-direction: column; /* Mengatur arah bio */  
-    align-items: center; /* Menyelaraskan bio secara vertikal */  
-    justify-content: center; /* Menyelaraskan bio secara horizontal */  
-}  
-  
-/* Contact Section Styles */  
-.contact-section {  
+/* Form Section Styles */  
+.form-section {  
     padding: 60px 20px; /* Padding untuk bagian atas dan bawah */  
     background-color: #ffffff; /* Warna latar belakang putih */  
     text-align: center; /* Menyelaraskan teks di tengah */  
     border-top: 1px solid #eaeaea; /* Garis pemisah di atas */  
 }  
   
-.contact-section header h1 {  
+.form-section header h1 {  
     font-size: 28px; /* Ukuran font untuk judul */  
     font-weight: 600; /* Ketebalan font untuk judul */  
     color: #333; /* Warna teks judul */  
     margin-bottom: 10px; /* Margin bawah untuk judul */  
 }  
   
-.contact-section header p {  
-    font-size: 16px; /* Ukuran font untuk deskripsi */  
-    color: #555; /* Warna teks deskripsi */  
-    margin-bottom: 30px; /* Margin bawah untuk deskripsi */  
-}  
-  
-.contact-form-container {  
+.form-group {  
     max-width: 600px; /* Lebar maksimum untuk form */  
     margin: 0 auto; /* Menyelaraskan form di tengah */  
-}  
-  
-.contact-form-section {  
-    margin-bottom: 30px; /* Jarak bawah untuk form */  
-}  
-  
-.form-group {  
     margin-bottom: 20px; /* Jarak antar grup form */  
     text-align: left; /* Menyelaraskan label dan input ke kiri */  
+}  
+  
+.result-section {  
+    padding: 60px 20px; /* Padding untuk bagian atas dan bawah */  
+    background-color: #ffffff; /* Warna latar belakang putih */  
+    text-align: center; /* Menyelaraskan teks di tengah */  
+    border-top: 1px solid #eaeaea; /* Garis pemisah di atas */  
 }  
   
 label {  
@@ -164,8 +142,7 @@ label {
 }  
   
 input[type="text"],  
-input[type="email"],  
-input[type="date"],  
+input[type="number"],    
 textarea {  
     width: 100%; /* Lebar penuh untuk input dan textarea */  
     padding: 10px; /* Padding untuk input dan textarea */  
@@ -236,16 +213,6 @@ footer {
         justify-content: center; /* Menyelaraskan slider secara horizontal */  
     }  
   
-    .contact-form-section {  
-        width: 100%; /* Lebar formulir untuk layar kecil */  
-        margin: 0 auto; /* Margin otomatis */  
-        flex-direction: column; /* Mengatur arah formulir */  
-    }  
-  
-    .contact-form-container {  
-        display: flex; /* Menggunakan flexbox untuk kontainer */  
-        flex-direction: column; /* Mengatur arah kontainer */  
-    }  
   
     .output-section {  
         margin: 45px auto; /* Margin untuk output */  

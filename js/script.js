@@ -1,39 +1,5 @@
 // JavaScript   
   
-// Mengambil elemen formulir dan output  
-const contactForm = document.querySelector('form');  
-const outputSection = document.querySelector('.output-section');  
-  
-// Event listener untuk pengiriman formulir  
-contactForm.addEventListener('submit', (event) => {  
-    event.preventDefault(); // Mencegah pengiriman formulir default  
-  
-    // Mengambil nilai input dari formulir  
-    const name = document.getElementById('inputName').value;  
-    const birthdate = document.getElementById('inputBirthdate').value;  
-    const email = document.getElementById('inputEmail').value;  
-    const message = document.getElementById('inputMessage').value;  
-  
-    // Menghapus output sebelumnya  
-    outputSection.querySelector('.output-data').innerHTML = '';  
-  
-    // Membuat elemen output baru  
-    const outputElements = [  
-        `Current time : ${new Date().toLocaleString()}`, // Menampilkan waktu saat ini  
-        `Name : ${name}`, // Menampilkan nama  
-        `Birthdate : ${birthdate}`, // Menampilkan tanggal lahir  
-        `Email : ${email}`, // Menampilkan email  
-        `Message : ${message}`, // Menampilkan pesan  
-    ];  
-  
-    // Menambahkan elemen output ke dalam output section  
-    outputElements.forEach(element => {  
-        const p = document.createElement('p'); // Membuat elemen paragraf  
-        p.textContent = element; // Mengisi teks paragraf  
-        outputSection.querySelector('.output-data').appendChild(p); // Menambahkan paragraf ke output data  
-    });  
-});  
-  
 // Banner Autoslide  
 var currentSlideIndex = 1; // Indeks slider awal  
 showSlides(currentSlideIndex); // Menampilkan slide pertama  
