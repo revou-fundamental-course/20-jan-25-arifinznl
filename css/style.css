@@ -1,0 +1,263 @@
+/* Global Styles */  
+body {  
+    max-width: 100%;  
+    overflow-x: hidden; /* Mencegah scroll horizontal */  
+    font-family: 'Roboto', sans-serif; /* Font untuk seluruh halaman */  
+}  
+  
+img {  
+    max-width: 100%; /* Memastikan gambar responsif */  
+    height: auto; /* Mempertahankan rasio aspek gambar */  
+}  
+  
+/* Header Section */  
+.header {  
+    display: flex; /* Menggunakan flexbox untuk header */  
+    align-items: center; /* Menyelaraskan item di tengah secara vertikal */  
+    justify-content: space-between; /* Menyebar ruang antara logo dan navbar */  
+    padding: 10px 20px; /* Padding untuk header */  
+    background-color: #ffffff; /* Warna latar belakang putih */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk kedalaman */  
+}  
+  
+.logo {  
+    width: 50px; /* Ukuran logo */  
+    height: 50px;  
+    border: 1px solid rgb(222, 210, 210); /* Border logo */  
+    margin-left: 10px; /* Margin kiri */  
+    background-size: cover; /* Ukuran background */  
+    border-radius: 50px; /* Membuat logo bulat */  
+}  
+  
+/* Navigation Styles */  
+.navigation {  
+    display: flex; /* Menggunakan flexbox untuk navbar */  
+    justify-content: center; /* Menyelaraskan link di tengah */  
+    gap: 20px; /* Jarak antar link */  
+    padding: 10px 0; /* Padding atas dan bawah untuk navbar */  
+    
+}  
+  
+.navigation > a {  
+    color: #333; /* Warna teks gelap untuk kontras */  
+    text-decoration: none; /* Menghilangkan garis bawah */  
+    padding: 10px 15px; /* Padding untuk link */  
+    font-size: 16px; /* Ukuran font yang lebih besar */  
+    font-weight: 500; /* Menambahkan ketebalan pada teks */  
+    letter-spacing: 0.5px; /* Jarak antar huruf */  
+    transition: color 0.3s, transform 0.3s; /* Transisi untuk perubahan warna dan transformasi */  
+}  
+  
+.navigation > a:hover {  
+    color: #a0a13e; /* Warna teks saat hover */  
+    transform: scale(1.1); /* Efek zoom saat hover */  
+}  
+  
+.navigation > a.active {  
+    font-weight: bold; /* Menebalkan teks untuk link aktif */  
+    border-bottom: 2px solid #cab000; /* Garis bawah untuk link aktif */  
+}  
+
+  
+/* Home Section */  
+#home-section {  
+    padding: 10px 20px;
+    background-color: #f9f9f9; /* Warna latar belakang yang lembut */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk kedalaman */  
+}  
+  
+.image-slider {  
+    display: flex; /* Menggunakan flexbox untuk slider */  
+    flex-direction: row; /* Mengatur arah slider */  
+    overflow: hidden; /* Menyembunyikan overflow */  
+}  
+  
+.slide {  
+    width: 100%; /* Lebar slider */  
+    height: 400px; /* Tinggi slider */  
+    object-fit: cover; /* Memastikan gambar mengisi area */  
+}  
+  
+.slider-controls {  
+    display: flex; /* Menggunakan flexbox untuk tombol */  
+    gap: 10px; /* Jarak antar tombol */  
+    align-items: center; /* Menyelaraskan tombol secara vertikal */  
+    justify-content: center; /* Menyelaraskan tombol secara horizontal */  
+    margin-top: 10px; /* Margin atas */  
+}  
+  
+button {  
+    width: fit-content; /* Lebar tombol sesuai konten */  
+    height: fit-content; /* Tinggi tombol sesuai konten */  
+    padding: 10px 16px; /* Padding tombol */  
+    font-size: 14px; /* Ukuran font tombol */  
+    border: 1px solid #ccc; /* Border tombol */  
+    border-radius: 4px; /* Sudut tombol */  
+    background-color: #f0f0f0; /* Warna latar belakang tombol */  
+    cursor: pointer; /* Pointer saat hover */  
+}  
+  
+/* Profile Section */  
+#profile-section {  
+    padding: 10px 20px;
+    background-color: #f9f9f9; /* Warna latar belakang yang lembut */ 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk kedalaman */   
+}  
+  
+.profile-container {  
+    display: flex; /* Menggunakan flexbox untuk profil */  
+    flex-direction: row; /* Mengatur arah profil */  
+    align-items: center; /* Menyelaraskan profil secara vertikal */  
+    justify-content: center; /* Menyelaraskan profil secara horizontal */  
+    height: 330px; /* Tinggi kontainer profil */  
+    margin-bottom: 40px; /* Margin bawah */  
+    flex-wrap: wrap; /* Membungkus elemen jika perlu */  
+    gap: 25px; /* Jarak antar elemen */  
+}  
+  
+.profile-bio {  
+    display: flex; /* Menggunakan flexbox untuk bio */  
+    flex-direction: column; /* Mengatur arah bio */  
+    align-items: center; /* Menyelaraskan bio secara vertikal */  
+    justify-content: center; /* Menyelaraskan bio secara horizontal */  
+}  
+  
+/* Contact Section Styles */  
+.contact-section {  
+    padding: 60px 20px; /* Padding untuk bagian atas dan bawah */  
+    background-color: #ffffff; /* Warna latar belakang putih */  
+    text-align: center; /* Menyelaraskan teks di tengah */  
+    border-top: 1px solid #eaeaea; /* Garis pemisah di atas */  
+}  
+  
+.contact-section header h1 {  
+    font-size: 28px; /* Ukuran font untuk judul */  
+    font-weight: 600; /* Ketebalan font untuk judul */  
+    color: #333; /* Warna teks judul */  
+    margin-bottom: 10px; /* Margin bawah untuk judul */  
+}  
+  
+.contact-section header p {  
+    font-size: 16px; /* Ukuran font untuk deskripsi */  
+    color: #555; /* Warna teks deskripsi */  
+    margin-bottom: 30px; /* Margin bawah untuk deskripsi */  
+}  
+  
+.contact-form-container {  
+    max-width: 600px; /* Lebar maksimum untuk form */  
+    margin: 0 auto; /* Menyelaraskan form di tengah */  
+}  
+  
+.contact-form-section {  
+    margin-bottom: 30px; /* Jarak bawah untuk form */  
+}  
+  
+.form-group {  
+    margin-bottom: 20px; /* Jarak antar grup form */  
+    text-align: left; /* Menyelaraskan label dan input ke kiri */  
+}  
+  
+label {  
+    display: block; /* Menampilkan label sebagai blok */  
+    margin-bottom: 5px; /* Jarak bawah untuk label */  
+    font-weight: 500; /* Ketebalan font untuk label */  
+}  
+  
+input[type="text"],  
+input[type="email"],  
+input[type="date"],  
+textarea {  
+    width: 100%; /* Lebar penuh untuk input dan textarea */  
+    padding: 10px; /* Padding untuk input dan textarea */  
+    border: 1px solid #ccc; /* Border untuk input dan textarea */  
+    border-radius: 4px; /* Sudut melengkung untuk input dan textarea */  
+}  
+  
+button {  
+    padding: 12px 20px; /* Padding untuk tombol */  
+    font-size: 16px; /* Ukuran font untuk tombol */  
+    color: white; /* Warna teks tombol */  
+    background-color: #cab000; /* Warna latar belakang tombol */  
+    border: none; /* Menghilangkan border default */  
+    border-radius: 4px; /* Sudut melengkung untuk tombol */  
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */  
+    transition: background-color 0.3s; /* Transisi untuk perubahan warna */  
+}  
+  
+button:hover {  
+    background-color: #cab000; /* Warna latar belakang saat hover */  
+}  
+  
+.output-section {  
+    margin-top: 20px; /* Jarak atas untuk output section */  
+    font-size: 16px; /* Ukuran font untuk output */  
+    color: #333; /* Warna teks output */  
+    text-align: left; /* Menyelaraskan teks output ke kiri */  
+}  
+  
+/* Footer Section */  
+footer {  
+    text-align: center; /* Menyelaraskan teks footer ke tengah */  
+}  
+  
+/* Responsive Styles */  
+@media only screen and (max-width: 600px) {  
+    body {  
+        height: 100vh; /* Tinggi body untuk layar kecil */  
+    }  
+  
+    .header {  
+        flex-direction: column; /* Mengatur arah header */  
+    }  
+  
+    .navigation {  
+        flex-direction: column; /* Mengatur arah navbar */  
+        margin-top: 20px; /* Margin atas navbar */  
+        width: 100%; /* Lebar navbar */  
+    }  
+  
+    .profile-container {  
+        height: auto; /* Tinggi otomatis untuk profil */  
+        display: flex; /* Menggunakan flexbox untuk profil */  
+        flex-direction: column; /* Mengatur arah profil */  
+        justify-content: center; /* Menyelaraskan profil secara horizontal */  
+        align-items: center; /* Menyelaraskan profil secara vertikal */  
+    }  
+  
+    #profile-section > h1,  
+    #contact-section > h1 {  
+        margin: auto; /* Margin otomatis untuk judul */  
+    }  
+  
+    .slide {  
+        display: flex; /* Menggunakan flexbox untuk slider */  
+        height: 100vh; /* Tinggi slider untuk layar kecil */  
+        align-items: center; /* Menyelaraskan slider secara vertikal */  
+        justify-content: center; /* Menyelaraskan slider secara horizontal */  
+    }  
+  
+    .contact-form-section {  
+        width: 100%; /* Lebar formulir untuk layar kecil */  
+        margin: 0 auto; /* Margin otomatis */  
+        flex-direction: column; /* Mengatur arah formulir */  
+    }  
+  
+    .contact-form-container {  
+        display: flex; /* Menggunakan flexbox untuk kontainer */  
+        flex-direction: column; /* Mengatur arah kontainer */  
+    }  
+  
+    .output-section {  
+        margin: 45px auto; /* Margin untuk output */  
+        width: 90%; /* Lebar output untuk layar kecil */  
+        flex-direction: column; /* Mengatur arah output */  
+    }  
+  
+    .output-data {  
+        width: auto; /* Lebar otomatis untuk output data */  
+        padding: 10px; /* Padding untuk output data */  
+        margin-left: auto; /* Margin kiri otomatis */  
+        border: 1px solid black; /* Border untuk output data */  
+        flex-direction: column; /* Mengatur arah output data */  
+    }  
+}  
