@@ -33,7 +33,7 @@ function calculateBMI() {
     const gender = document.querySelector('input[name="gender"]:checked').value; 
 
     if (!weight || !height) {
-        alert("Silakan masukkan berat badan dan tinggi badan.");
+        alert("Pastikan semua kolom terisi sesuai");
         return;
     }
 

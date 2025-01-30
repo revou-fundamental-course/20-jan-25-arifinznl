@@ -165,12 +165,6 @@ button:hover {
     background-color: #cab000; /* Warna latar belakang saat hover */  
 }  
   
-.output-section {  
-    margin-top: 20px; /* Jarak atas untuk output section */  
-    font-size: 16px; /* Ukuran font untuk output */  
-    color: #333; /* Warna teks output */  
-    text-align: left; /* Menyelaraskan teks output ke kiri */  
-}  
   
 /* Footer Section */  
 footer {  
@@ -208,23 +202,9 @@ footer {
   
     .slide {  
         display: flex; /* Menggunakan flexbox untuk slider */  
-        height: 100vh; /* Tinggi slider untuk layar kecil */  
+        height: 30vh; /* Tinggi slider untuk layar kecil */  
         align-items: center; /* Menyelaraskan slider secara vertikal */  
         justify-content: center; /* Menyelaraskan slider secara horizontal */  
     }  
   
-  
-    .output-section {  
-        margin: 45px auto; /* Margin untuk output */  
-        width: 90%; /* Lebar output untuk layar kecil */  
-        flex-direction: column; /* Mengatur arah output */  
-    }  
-  
-    .output-data {  
-        width: auto; /* Lebar otomatis untuk output data */  
-        padding: 10px; /* Padding untuk output data */  
-        margin-left: auto; /* Margin kiri otomatis */  
-        border: 1px solid black; /* Border untuk output data */  
-        flex-direction: column; /* Mengatur arah output data */  
-    }  
 }  
